@@ -1,0 +1,275 @@
+[2017-01-17 22:13:52] __rvm_make
+__rvm_make () 
+{ 
+    \make "$@" || return $?
+}
+current path: /home/vagrant/.rvm/src/ruby-2.3.3
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin
+command(2): __rvm_make install
+++ make install
+generating i686-linux-fake.rb
+i686-linux-fake.rb updated
+	CC = gcc
+	LD = ld
+	LDSHARED = gcc -shared
+	CFLAGS = -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -std=iso9899:1999  -fPIC 
+	XCFLAGS = -D_FORTIFY_SOURCE=2 -fstack-protector -fno-strict-overflow -fvisibility=hidden -DRUBY_EXPORT
+	CPPFLAGS =   -I. -I.ext/include/i686-linux -I./include -I.
+	DLDFLAGS = -Wl,-soname,libruby.so.2.3  -fstack-protector  
+	SOLIBS = -lpthread -lrt -lgmp -ldl -lcrypt -lm  
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.6/lto-wrapper
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-targets=all --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) 
+generating enc.mk
+making srcs under enc
+make[1]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[1]: Nothing to be done for `srcs'.
+make[1]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+generating transdb.h
+transdb.h unchanged
+generating makefile exts.mk
+configuring socket
+Failed to configure tk. It will not be installed.
+Failed to configure tk/tkutil. It will not be installed.
+make[1]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/array/resize'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/array/resize'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bignum'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bignum'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bug-3571'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bug-3571'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bug-5832'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bug-5832'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bug_reporter'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/bug_reporter'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/class'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/class'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/debug'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/debug'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/dln/empty'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/dln/empty'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/exception'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/exception'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/fatal'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/fatal'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/file'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/file'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/float'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/float'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/funcall'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/funcall'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/gvl/call_without_gvl'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/gvl/call_without_gvl'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/hash'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/hash'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/iseq_load'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/iseq_load'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/iter'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/iter'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/load/dot.dot'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/load/dot.dot'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/marshal/compat'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/marshal/compat'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/marshal/internal_ivar'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/marshal/internal_ivar'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/marshal/usr'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/marshal/usr'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/method'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/method'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/notimplement'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/notimplement'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/num2int'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/num2int'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/path_to_class'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/path_to_class'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/popen_deadlock'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/popen_deadlock'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/postponed_job'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/postponed_job'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/printf'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/printf'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/proc'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/proc'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/rational'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/rational'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/recursion'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/recursion'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/st/foreach'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/st/foreach'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/st/numhash'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/st/numhash'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/st/update'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/st/update'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/string'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/string'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/struct'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/struct'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/symbol'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/symbol'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/time'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/time'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/tracepoint'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/tracepoint'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/typeddata'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/typeddata'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/vm'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/vm'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/wait_for_single_fd'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/-test-/wait_for_single_fd'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/bigdecimal'
+installing default bigdecimal libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/bigdecimal'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/cgi/escape'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/cgi/escape'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/continuation'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/continuation'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/coverage'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/coverage'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/date'
+installing default date_core libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/date'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/dbm'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/dbm'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest'
+installing digest libraries
+installing default digest libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/bubblebabble'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/bubblebabble'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/md5'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/md5'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/rmd160'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/rmd160'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/sha1'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/sha1'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/sha2'
+installing default sha2 libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/digest/sha2'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/etc'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/etc'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/fcntl'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/fcntl'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/fiber'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/fiber'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/fiddle'
+installing default fiddle libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/fiddle'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/gdbm'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/gdbm'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/io/console'
+installing default console libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/io/console'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/io/nonblock'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/io/nonblock'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/io/wait'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/io/wait'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/json'
+installing default libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/json'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/json/generator'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/json/generator'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/json/parser'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/json/parser'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/mathn/complex'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/mathn/complex'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/mathn/rational'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/mathn/rational'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/nkf'
+installing default nkf libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/nkf'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/objspace'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/objspace'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/openssl'
+installing default openssl libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/openssl'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/pathname'
+installing default pathname libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/pathname'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/psych'
+installing default psych libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/psych'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/pty'
+installing default pty libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/pty'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/racc/cparse'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/racc/cparse'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/rbconfig/sizeof'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/rbconfig/sizeof'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/readline'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/readline'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/ripper'
+installing default ripper libraries
+checking ../.././parse.y and ../.././ext/ripper/eventids2.c
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/ripper'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/sdbm'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/sdbm'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/socket'
+linking shared-object socket.so
+installing default socket libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/socket'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/stringio'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/stringio'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/strscan'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/strscan'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/syslog'
+installing default syslog libraries
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/syslog'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/thread'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/thread'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/tk'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/tk'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/tk/tkutil'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/tk/tkutil'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/zlib'
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3/ext/zlib'
+make[2]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[2]: `ruby' is up to date.
+make[2]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[1]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+making enc
+make[1]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[1]: Nothing to be done for `enc'.
+make[1]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+making trans
+make[1]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[1]: Nothing to be done for `./enc/trans'.
+make[1]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+making encs
+make[1]: Entering directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+make[1]: Leaving directory `/home/vagrant/.rvm/src/ruby-2.3.3'
+./miniruby -I./lib -I. -I.ext/common  ./tool/runruby.rb --extout=.ext  -- --disable-gems -r./i686-linux-fake ./tool/rbinstall.rb --make="make" --dest-dir="" --extout=".ext" --mflags="" --make-flags="" --data-mode=0644 --prog-mode=0755 --installed-list .installed.list --mantype="doc"
+installing binary commands:   /home/vagrant/.rvm/rubies/ruby-2.3.3/bin
+installing base libraries:    /home/vagrant/.rvm/rubies/ruby-2.3.3/lib
+installing arch files:        /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/i686-linux
+installing pkgconfig data:    /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/pkgconfig
+installing command scripts:   /home/vagrant/.rvm/rubies/ruby-2.3.3/bin
+installing library scripts:   /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0
+installing common headers:    /home/vagrant/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0
+installing manpages:          /home/vagrant/.rvm/rubies/ruby-2.3.3/share/man/man1
+installing extension objects: /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/i686-linux
+installing extension objects: /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/i686-linux
+installing extension objects: /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/vendor_ruby/2.3.0/i686-linux
+installing extension headers: /home/vagrant/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/i686-linux
+installing extension scripts: /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0
+installing extension scripts: /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0
+installing extension scripts: /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/vendor_ruby/2.3.0
+installing extension headers: /home/vagrant/.rvm/rubies/ruby-2.3.3/include/ruby-2.3.0/ruby
+installing default gems:      /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0 (build_info, cache, doc, extensions, gems, specifications)
+                              bigdecimal 1.2.8
+                              io-console 0.4.5
+                              json 1.8.3
+                              psych 2.1.0
+                              rdoc 4.2.1
+installing bundle gems:       /home/vagrant/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0 (build_info, cache, doc, extensions, gems, specifications)
+                              minitest 5.8.5
+                              rake 10.4.2
+                              power_assert 0.2.6
+                              test-unit 3.1.5
+                              net-telnet 0.1.1
+                              did_you_mean 1.0.0

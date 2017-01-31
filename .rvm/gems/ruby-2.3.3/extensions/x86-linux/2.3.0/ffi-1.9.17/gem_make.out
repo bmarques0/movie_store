@@ -1,0 +1,52 @@
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/ffi-1.9.17/ext/ffi_c
+/home/vagrant/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20170117-1344-1oxad6l.rb extconf.rb
+checking for ffi_call() in -lffi... yes
+checking for ffi_prep_closure()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/vagrant/.rvm/gems/ruby-2.3.3/extensions/x86-linux/2.3.0/ffi-1.9.17/mkmf.log
+
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/ffi-1.9.17/ext/ffi_c
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/ffi-1.9.17/ext/ffi_c
+make "DESTDIR="
+compiling Types.c
+compiling MethodHandle.c
+compiling Function.c
+compiling DataConverter.c
+compiling ClosurePool.c
+compiling StructByReference.c
+compiling AbstractMemory.c
+compiling LastError.c
+compiling ArrayType.c
+compiling Platform.c
+compiling Type.c
+compiling Variadic.c
+compiling StructByValue.c
+compiling StructLayout.c
+compiling Thread.c
+compiling Buffer.c
+compiling Call.c
+compiling Pointer.c
+compiling Struct.c
+compiling ffi.c
+compiling DynamicLibrary.c
+compiling MemoryPointer.c
+compiling LongDouble.c
+compiling MappedType.c
+compiling FunctionInfo.c
+linking shared-object ffi_c.so
+
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/ffi-1.9.17/ext/ffi_c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20170117-1344-k6f5n3

@@ -1,0 +1,114 @@
+[2017-01-17 22:06:29] requirements_debian_update_system
+requirements_debian_update_system () 
+{ 
+    __rvm_try_sudo apt-get --quiet --yes update || { 
+        \typeset __ret=$?;
+        case ${__ret} in 
+            100)
+                rvm_error "There has been error while updating 'apt-get', please give it some time and try again later.
+404 errors should be fixed for rvm to proceed. Check your sources configured in:
+    /etc/apt/sources.list
+    /etc/apt/sources.list.d/*.list
+"
+            ;;
+        esac;
+        return ${__ret}
+    }
+}
+current path: /home/vagrant
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin
+command(2): requirements_debian_update_system ruby-2.3.3
+++ __rvm_try_sudo apt-get --quiet --yes update
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+++ command sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+++ sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+Ign http://us.archive.ubuntu.com precise InRelease
+Hit http://security.ubuntu.com precise-security InRelease
+Hit http://security.ubuntu.com precise-security/main Sources
+Hit http://security.ubuntu.com precise-security/restricted Sources
+Hit http://security.ubuntu.com precise-security/universe Sources
+Hit http://security.ubuntu.com precise-security/multiverse Sources
+Hit http://security.ubuntu.com precise-security/main i386 Packages
+Hit http://security.ubuntu.com precise-security/restricted i386 Packages
+Hit http://security.ubuntu.com precise-security/universe i386 Packages
+Hit http://security.ubuntu.com precise-security/multiverse i386 Packages
+Hit http://security.ubuntu.com precise-security/main TranslationIndex
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+Hit http://security.ubuntu.com precise-security/main Translation-en
+Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+Hit http://security.ubuntu.com precise-security/restricted Translation-en
+Hit http://security.ubuntu.com precise-security/universe Translation-en
+Hit http://us.archive.ubuntu.com precise-updates InRelease
+Hit http://us.archive.ubuntu.com precise-backports InRelease
+Hit http://us.archive.ubuntu.com precise Release.gpg
+Hit http://us.archive.ubuntu.com precise-updates/main Sources
+Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
+Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/main Sources
+Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
+Hit http://us.archive.ubuntu.com precise-backports/universe Sources
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
+Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise Release
+Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+Hit http://us.archive.ubuntu.com precise/main Sources
+Hit http://us.archive.ubuntu.com precise/restricted Sources
+Hit http://us.archive.ubuntu.com precise/universe Sources
+Hit http://us.archive.ubuntu.com precise/multiverse Sources
+Hit http://us.archive.ubuntu.com precise/main i386 Packages
+Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise/main Translation-en
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise/universe Translation-en
+Reading package lists...

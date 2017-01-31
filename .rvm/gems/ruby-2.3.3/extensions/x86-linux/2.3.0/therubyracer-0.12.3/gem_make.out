@@ -1,0 +1,47 @@
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/therubyracer-0.12.3/ext/v8
+/home/vagrant/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20170117-1940-17w5c0v.rb extconf.rb
+checking for main() in -lpthread... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/vagrant/.rvm/gems/ruby-2.3.3/extensions/x86-linux/2.3.0/therubyracer-0.12.3/mkmf.log
+
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling constants.cc
+compiling value.cc
+compiling rr.cc
+compiling function.cc
+compiling context.cc
+compiling stack.cc
+compiling accessor.cc
+compiling primitive.cc
+compiling template.cc
+compiling exception.cc
+compiling locker.cc
+compiling object.cc
+compiling array.cc
+compiling trycatch.cc
+compiling init.cc
+compiling constraints.cc
+compiling signature.cc
+compiling script.cc
+compiling backref.cc
+compiling invocation.cc
+compiling v8.cc
+compiling gc.cc
+compiling external.cc
+compiling string.cc
+compiling heap.cc
+compiling message.cc
+compiling date.cc
+compiling handles.cc
+linking shared-object v8/init.so
+
+current directory: /home/vagrant/.rvm/gems/ruby-2.3.3/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 init.so ./.gem.20170117-1940-1docg18/v8
